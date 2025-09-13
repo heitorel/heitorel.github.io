@@ -1,10 +1,10 @@
 :root {
-  --primary: #160C3F;       /* Roxo escuro */
-  --secondary: #9C7CC2;     /* Lilás suave */
-  --third: #14B8A6;         /* Teal */
-  --body: #666666;          /* Texto explicativo */
-  --emphasis: #2E2E2E;      /* Títulos */
-  --bg: #FAFAFA;            /* Fundo claro */
+  --primary: #FAFAFA;       
+  --secondary: #9C7CC2;     
+  --third: #14B8A6;         
+  --body: #666666;          
+  --emphasis: #2E2E2E;      
+  --bg: #160C3F;            
 }
 
 html, body { height: 100%; }
