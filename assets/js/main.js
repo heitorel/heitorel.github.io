@@ -92,3 +92,33 @@ function initThemeToggle(){
     initThemeToggle();
   }catch(e){ console.error(e); }
 })();
+(function () {
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-toggle');
+
+  // estado inicial: localStorage > preferência do SO > dark por padrão do seu HTML
+  const stored = localStorage.getItem('theme');
+  if (stored === 'light') {
+    root.classList.remove('dark');
+    btn && (btn.textContent = '☀️');
+  } else if (stored === 'dark') {
+    root.classList.add('dark');
+    btn && (btn.textContent = '🌙');
+  } else {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      root.classList.add('dark');
+      btn && (btn.textContent = '🌙');
+    } else {
+      root.classList.remove('dark');
+      btn && (btn.textContent = '☀️');
+    }
+  }
+
+  // clique -> alterna classe e salva preferência
+  btn?.addEventListener('click', () => {
+    const isDark = root.classList.toggle('dark');
+    btn.textContent = isDark ? '🌙' : '☀️';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+})();
