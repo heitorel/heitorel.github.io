@@ -118,3 +118,49 @@ html.dark .icon-btn:hover{ background: rgba(255,255,255,.08); }
 
 .icon{ width:1.1rem; height:1.1rem; display:block; }
 
+/* ==== Background gradient suave com blobs ==== */
+.bg-blobs{
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: -1;
+  opacity: .75; /* intensidade no tema claro */
+}
+html.dark .bg-blobs{ opacity: .55; } /* um pouco mais sutil no escuro */
+
+.blob-1, .blob-2{
+  position: absolute; filter: blur(36px);
+  border-radius: 9999px; transform: translateZ(0);
+}
+
+/* topo central – turquesa suave */
+.blob-1{
+  top: -8rem; left: 50%; transform: translateX(-50%);
+  width: 42rem; height: 42rem;
+  background: radial-gradient(
+    45% 45% at 50% 50%,
+    color-mix(in oklab, var(--secondary) 30%, transparent) 0%,
+    transparent 70%
+  );
+}
+
+/* lateral – mistura do teal + azul */
+.blob-2{
+  top: 35%; left: -10rem;
+  width: 36rem; height: 36rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    color-mix(in oklab, var(--third) 26%, transparent) 0%,
+    transparent 70%
+  );
+}
+
+/* opcional: um véu de degradê linear bem sutil para unificar o fundo */
+.bg-blobs::after{
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 3%, transparent) 0%,
+    transparent 30%,
+    color-mix(in oklab, var(--secondary) 4%, transparent) 100%
+  );
+}
