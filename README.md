@@ -1,17 +1,25 @@
-# Portfolio (dados via resume.json)
+# Portfolio (dados via resume.json) — Paleta personalizada
 
-Este projeto carrega o conteúdo do site a partir de `assets/data/resume.json`.
+Palette aplicada via CSS variables:
+- Primary: #160C3F
+- Secondary: #9C7CC2
+- Third: #14B8A6
+- Body: #666666
+- Emphasis: #2E2E2E
+- Background: #FAFAFA
 
-Estrutura:
-- `index.html` (layout + Tailwind CDN)
-- `assets/css/style.css` (ajustes visuais)
-- `assets/js/main.js` (carrega o JSON e renderiza)
-- `assets/data/resume.json` (seu currículo)
-- `.nojekyll` (desativa Jekyll no GitHub Pages)
+### Foto de perfil
+Coloque um arquivo **me.png** na **raiz do projeto** (mesmo nível do `index.html`).
 
-Publicação (GitHub Pages):
-1) Suba tudo na raiz do repositório.
-2) Settings → Pages → Deploy from a branch → Branch `main` → Folder `/`.
-3) Acesse a URL do Pages.
+### Estrutura
+/
+├─ index.html
+├─ me.png                ← sua foto (adicione aqui)
+├─ .nojekyll
+└─ assets/
+   ├─ css/style.css
+   ├─ js/main.js
+   └─ data/resume.json
 
-Edite seus dados em `assets/data/resume.json`.
+### Publicar
+GitHub Pages → Deploy from a branch → main / (root).

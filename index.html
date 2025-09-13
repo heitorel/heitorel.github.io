@@ -13,22 +13,17 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
-          colors: { primary: '#0e3275', accent: '#00B29E' }
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
         }
       },
       darkMode: 'class'
     };
   </script>
-  <link rel="stylesheet" href="assets/css/style.css?v=1" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
-<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+<body>
   <main class="min-h-screen">
-    <div class="pointer-events-none absolute inset-0 opacity-60 dark:opacity-70 -z-10">
-      <div class="blob-1"></div>
-      <div class="blob-2"></div>
-    </div>
-
+    <!-- Header / Hero -->
     <header class="container pt-8 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="logo">λ</div>
@@ -43,33 +38,31 @@
 
     <section class="container py-10 grid gap-6 md:grid-cols-2 md:items-center">
       <div>
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight"><span id="dev-role">Engenheiro de Software</span></h1>
-        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300" id="dev-tagline">...</p>
+        <h1 class="hero-title"><span id="dev-role">Engenheiro de Software</span></h1>
+        <p class="mt-4 body-muted" id="dev-tagline">...</p>
         <div class="mt-6 flex flex-wrap items-center gap-3">
           <a id="whatsapp-link" href="#" class="btn-primary">Fale comigo no WhatsApp</a>
           <a id="email-link" href="mailto:" class="btn-outline">Enviar e‑mail</a>
         </div>
-        <p class="mt-4 text-sm text-slate-500 dark:text-slate-400" id="dev-location">📍 ...</p>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400"><span id="dev-phone"></span></p>
+        <p class="mt-4 text-sm body-muted" id="dev-location">📍 ...</p>
+        <p class="mt-2 text-sm body-muted"><span id="dev-phone"></span></p>
       </div>
       <div class="md:justify-self-end">
-        <div class="card glass dark:glass-dark">
+        <div class="card glass">
           <div class="card-avatar">
-            <div class="avatar-circle">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="opacity-70">
-                <path d="M20 21a8 8 0 1 0-16 0" stroke-width="1.5" />
-                <circle cx="12" cy="7" r="4" stroke-width="1.5" />
-              </svg>
+            <div class="avatar-circle overflow-hidden">
+              <img src="me.png" alt="Foto de perfil" class="h-full w-full object-cover" />
             </div>
           </div>
           <div class="p-5">
             <div class="text-lg font-bold" id="card-name">Heitor Lopes Bianchi</div>
-            <div class="text-slate-600 dark:text-slate-300" id="card-role">Engenheiro de Software</div>
+            <div class="body-muted" id="card-role">Engenheiro de Software</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Sobre -->
     <section class="py-8">
       <div class="container">
         <h2 class="section-title">Sobre mim</h2>
@@ -77,6 +70,7 @@
       </div>
     </section>
 
+    <!-- Tecnologias -->
     <section class="py-10">
       <div class="container">
         <h2 class="section-title">Tecnologias</h2>
@@ -84,10 +78,12 @@
       </div>
     </section>
 
+    <!-- Destaques (opcional) -->
     <section class="py-6">
       <div class="container grid gap-4 sm:grid-cols-3" id="highlights"></div>
     </section>
 
+    <!-- Experiência -->
     <section class="py-16" id="experiencia">
       <div class="container">
         <h2 class="section-title">Experiência</h2>
@@ -98,6 +94,7 @@
       </div>
     </section>
 
+    <!-- Educação & Idiomas -->
     <section class="py-16">
       <div class="container grid gap-8 md:grid-cols-2">
         <div>
@@ -111,6 +108,7 @@
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="py-16" id="contato">
       <div class="container">
         <div class="cta">
@@ -124,12 +122,13 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="py-10">
-      <div class="container text-center text-sm text-slate-500 dark:text-slate-400">
+      <div class="container text-center text-sm body-muted">
         © <span id="year"></span> <span id="footer-name">Heitor Lopes Bianchi</span>. Todos os direitos reservados.
       </div>
     </footer>
   </main>
-  <script src="assets/js/main.js?v=1"></script>
+  <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

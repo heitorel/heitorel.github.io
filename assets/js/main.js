@@ -22,8 +22,8 @@ function renderSkillsGroups(groups){
   c.innerHTML='';
   Object.entries(groups||{}).forEach(([group, items])=>{
     const card=document.createElement('div'); card.className='group-card';
-    const title=document.createElement('div'); title.className='group-title'; title.textContent=group;
-    const wrap=document.createElement('div'); wrap.className='flex flex-wrap gap-2';
+    const title=document.createElement('div'); title.className='section-sub'; title.style.fontWeight='700'; title.textContent=group;
+    const wrap=document.createElement('div'); wrap.className='flex flex-wrap gap-2 mt-2';
     (items||[]).forEach(i=> wrap.appendChild(pill(i)));
     card.appendChild(title); card.appendChild(wrap); c.appendChild(card);
   });
@@ -36,7 +36,7 @@ function renderExperience(list){
     const h=document.createElement('h4'); h.className='font-semibold';
     h.innerHTML = `${exp.role} • <span class="muted">${exp.company}</span>`;
     const p=document.createElement('p'); p.className='period'; p.textContent = exp.period + (exp.location? ` • ${exp.location}`: '');
-    const ul=document.createElement('ul'); ul.className='mt-2 list-disc pl-5 text-slate-700 dark:text-slate-200 space-y-1';
+    const ul=document.createElement('ul'); ul.className='mt-2 list-disc pl-5'; ul.style.color='var(--emphasis)';
     (exp.bullets||[]).forEach(b=>{ const li=document.createElement('li'); li.textContent=b; ul.appendChild(li); });
     w.appendChild(h); w.appendChild(p); w.appendChild(ul); c.appendChild(w);
   });
@@ -46,14 +46,14 @@ function renderEducation(list){
   (list||[]).forEach(ed=>{
     const div=document.createElement('div');
     div.innerHTML = `<div class="font-semibold">${ed.degree}</div>
-    <div class="text-sm text-slate-500">${ed.institution} • ${ed.period}${ed.location? ' • '+ed.location:''}</div>`;
+    <div class="period">${ed.institution} • ${ed.period}${ed.location? ' • '+ed.location:''}</div>`;
     c.appendChild(div);
   });
 }
 function renderLanguages(list){
   const c=el('languages'); if(!c) return; c.innerHTML='';
   (list||[]).forEach(l=>{
-    const div=document.createElement('div'); div.textContent = `${l.name} — ${l.level}`; c.appendChild(div);
+    const div=document.createElement('div'); div.className='period'; div.textContent = `${l.name} — ${l.level}`; c.appendChild(div);
   });
 }
 function initThemeToggle(){
