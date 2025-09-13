@@ -1,0 +1,118 @@
+{
+  "name": "Heitor Lopes Bianchi",
+  "role": "Engenheiro de Software",
+  "tagline": "Backend com Java/Kotlin e Spring; integração de sistemas e soluções escaláveis em finanças e tecnologia.",
+  "location": "São Paulo, Brasil",
+  "email": "heitor.lopes.bianchi@gmail.com",
+  "phone": "+55 11 97773-1896",
+  "whatsapp": "https://wa.me/5511977731896?text=Ol%C3%A1%20vim%20pelo%20seu%20site!",
+  "linkedin": "https://www.linkedin.com/in/heitorbianchi",
+  "github": "https://github.com/heitorel",
+  "highlights": [],
+  "skills": {
+    "Backend": [
+      "Java",
+      "Spring Framework",
+      "JUnit",
+      "Mockito",
+      "Maven",
+      "Kotlin",
+      "Gradle",
+      "Kafka",
+      "RabbitMQ",
+      "REST"
+    ],
+    "Dados": [
+      "Python",
+      "VBA",
+      "SQL"
+    ],
+    "Frontend": [
+      "Angular",
+      "CSS",
+      "TypeScript",
+      "HTML",
+      "JavaScript"
+    ],
+    "Bancos de Dados": [
+      "SQL Server",
+      "MySQL",
+      "Access",
+      "MongoDB",
+      "Redis"
+    ],
+    "DevOps": [
+      "Kubernetes",
+      "OpenShift",
+      "Docker",
+      "VMWare",
+      "Jenkins",
+      "GitHub Actions"
+    ],
+    "Metodologias": [
+      "Git",
+      "Jira",
+      "Scrum",
+      "Agile",
+      "CI/CD"
+    ]
+  },
+  "languages": [
+    {
+      "name": "Português - BR",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglês - EUA",
+      "level": "Intermediário"
+    }
+  ],
+  "about": "Sou Desenvolvedor Backend com certificação Microsoft Azure e experiência sólida em Java, Spring Framework, APIs REST, Microservices, Kotlin, Angular e Python. Atuei em instituições como PagBank, F1RST Tecnologia e Santander, com foco em soluções escaláveis, integração de sistemas e transformação digital.",
+  "projects": [],
+  "experience": [
+    {
+      "company": "PagBank",
+      "role": "Engenheiro de Software",
+      "period": "mar 2025 — presente",
+      "location": "São Paulo, Brasil",
+      "bullets": [
+        "Time de Emissão, desenvolvendo aplicações backend em Kotlin e Java Spring Boot em microsserviços e monorepos.",
+        "Validação do fluxo de emissão de transações de cartões."
+      ]
+    },
+    {
+      "company": "UFRJ",
+      "role": "Pesquisador Assistente",
+      "period": "fev 2025 — presente",
+      "location": "Rio de Janeiro, Brasil",
+      "bullets": [
+        "Projetos de pesquisa no grupo Infornet.",
+        "Análise de dados, suporte acadêmico e desenvolvimento de soluções digitais para ensino e pesquisa."
+      ]
+    },
+    {
+      "company": "F1RST Tecnologia",
+      "role": "IT Developer",
+      "period": "dez 2021 — mar 2025",
+      "location": "São Paulo, Brasil",
+      "bullets": [
+        "Atuação no time de URA.",
+        "Migração de projetos monolíticos para microsserviços, garantindo escalabilidade e manutenção simplificada."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bacharelado em Sistemas de Informação",
+      "institution": "USP",
+      "period": "2017 — 2024",
+      "location": "São Paulo, Brasil"
+    },
+    {
+      "degree": "Certified: Azure Fundamentals",
+      "institution": "Microsoft",
+      "period": "out 2024",
+      "location": "São Paulo, Brasil"
+    }
+  ]
+}
