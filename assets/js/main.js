@@ -56,15 +56,7 @@ function renderLanguages(list){
     const div=document.createElement('div'); div.className='period'; div.textContent = `${l.name} — ${l.level}`; c.appendChild(div);
   });
 }
-function initThemeToggle(){
-  const btn=document.getElementById('theme-toggle');
-  btn?.addEventListener('click', ()=>{
-    const root=document.documentElement;
-    const isDark=root.classList.contains('dark');
-    if(isDark){ root.classList.remove('dark'); btn.textContent='☀️'; }
-    else { root.classList.add('dark'); btn.textContent='🌙'; }
-  });
-}
+
 (async ()=>{
   try{
     const cv = await loadResume();
@@ -89,7 +81,6 @@ function initThemeToggle(){
     renderExperience(cv.experience);
     renderEducation(cv.education);
     renderLanguages(cv.languages);
-    initThemeToggle();
   }catch(e){ console.error(e); }
 })();
 (function () {
