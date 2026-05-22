@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "Heitor Bianchi | Engenheiro de Software Backend 💻",
+    "description": "Portfolio profissional de Heitor Lopes Bianchi, engenheiro de software backend especializado em integrações e sistemas escaláveis."
+  },
+  "profile": {
+    "name": "Heitor Bianchi",
+    "brandName": "Heitor Bianchi",
+    "role": "Engenheiro de Software Backend",
+    "tagline": "Backend com Java, Kotlin e Spring; integração de sistemas e soluções escaláveis em finanças e tecnologia.",
+    "location": "São Paulo, Brasil",
+    "city": "São Paulo",
+    "email": "heitor.lopes.bianchi@gmail.com",
+    "phone": "+55 11 97773-1896",
+    "whatsapp": "https://wa.me/5511977731896?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site!",
+    "linkedin": "https://www.linkedin.com/in/heitorbianchi",
+    "github": "https://github.com/heitorel"
+  },
+  "navigation": {
+    "brandAria": "Ir para a pagina inicial",
+    "menuAria": "Navegacao principal",
+    "menuToggle": "Abrir menu",
+    "about": "Sobre",
+    "experiences": "Experiências",
+    "contact": "Contatos",
+    "themeToggle": "Alternar tema"
+  },
+  "home": {
+    "greeting": "Olá, eu sou Heitor 👋",
+    "cards": {
+      "experiences": "Experiências",
+      "github": "GitHub",
+      "portfolio": "Portfólio"
+    },
+    "stackTitle": "Stack que eu gosto",
+    "portraitAlt": "Foto de perfil de Heitor Bianchi"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Sou fascinado por computadores e adoro o processo de criação! 🔨💡",
+    "careerSummary": "Sou desenvolvedor Backend certificado Microsoft Azure, com experiência em Java, Kotlin, Spring e APIs REST. Atuo com microsserviços, integração de sistemas e soluções escaláveis, além de Python, Angular e RabbitMQ, buscando transformar processos complexos em soluções eficientes. 🙌",
+    "stackNote": "Aqui estão algumas das coisas que eu uso"
+  },
+  "experiencesPage": {
+    "title": "Experiências",
+    "profileAria": "Dados de contato",
+    "linksAria": "Links profissionais",
+    "links": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "whatsapp": "WhatsApp",
+      "resume": "Currículo"
+    },
+    "resumePath": "assets/curriculo.pdf"
+  },
+  "contactPage": {
+    "title": "Contato",
+    "intro": "Quer conversar sobre uma oportunidade ou projeto? Envie uma mensagem por aqui ou fale comigo direto pelo email.",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensagem"
+    },
+    "submit": "Enviar",
+    "emailSubject": "Contato pelo portfolio"
+  },
+  "portfolioPage": {
+    "title": "Portfólio em Construção",
+    "description": "Esta área vai receber projetos selecionados, estudos de caso e detalhes técnicos. Por enquanto, o melhor caminho é visitar meu GitHub.",
+    "githubButton": "Abrir GitHub"
+  },
+  "footer": {
+    "githubAria": "GitHub",
+    "linkedinAria": "LinkedIn"
+  },
+  "stack": {
+    "core": ["Java", "Spring", "Kotlin", "MySQL", "Grafana", "JUnit", "Docker", "Git"],
+    "tools": {
+      "Java": {
+        "icon": "openjdk",
+        "url": "https://docs.oracle.com/en/java/",
+        "color": "#f89820"
+      },
+      "Spring": {
+        "icon": "spring",
+        "url": "https://spring.io/projects/spring-framework",
+        "color": "#6db33f"
+      },
+      "Kotlin": {
+        "icon": "kotlin",
+        "url": "https://kotlinlang.org/docs/home.html",
+        "color": "#7f52ff"
+      },
+      "MySQL": {
+        "icon": "mysql",
+        "url": "https://dev.mysql.com/doc/",
+        "color": "#4479a1"
+      },
+      "Grafana": {
+        "icon": "grafana",
+        "url": "https://grafana.com/docs/",
+        "color": "#f46800"
+      },
+      "JUnit": {
+        "icon": "junit5",
+        "url": "https://junit.org/junit5/docs/current/user-guide/",
+        "color": "#25a162"
+      },
+      "Docker": {
+        "icon": "docker",
+        "url": "https://docs.docker.com/",
+        "color": "#2496ed"
+      },
+      "Git": {
+        "icon": "git",
+        "url": "https://git-scm.com/doc",
+        "color": "#f05032"
+      }
+    }
+  },
+  "experience": [
+    {
+      "company": "PagBank",
+      "role": "Engenheiro de Software Backend",
+      "period": "mar 2025 - presente",
+      "location": "São Paulo, Brasil",
+      "description": "Atuação no time de Emissão, desenvolvendo aplicações backend em Kotlin e Java Spring Boot, estruturadas em microsserviços e monorepos responsáveis pela validação do fluxo de emissão de transações de cartões.",
+      "bullets": [
+        "Desenvolvimento backend com Kotlin, Java, Spring Boot e arquitetura orientada a microsserviços.",
+        "Participação no ciclo de desenvolvimento, observabilidade, CI/CD e evolução de fluxos críticos de cartões."
+      ],
+      "technologies": [
+        "Kotlin",
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "Clean Architecture",
+        "MongoDB",
+        "Oracle SQL",
+        "Docker",
+        "Kubernetes",
+        "JUnit",
+        "Gradle"
+      ]
+    },
+    {
+      "company": "UNIRIO",
+      "role": "Pesquisador Assistente",
+      "period": "fev 2025 - presente",
+      "location": "Rio de Janeiro, Brasil",
+      "description": "Participação em projetos de pesquisa vinculados ao grupo Infornet, com análise de dados, suporte acadêmico e desenvolvimento de soluções digitais voltadas para ensino e pesquisa.",
+      "bullets": [
+        "Apoio técnico em pesquisa acadêmica, análise de dados e tecnologia educacional.",
+        "Construção de soluções digitais para rotinas de ensino, colaboração e pesquisa."
+      ],
+      "technologies": [
+        "Pesquisa Acadêmica",
+        "Análise de Dados",
+        "Python",
+        "Tecnologia Educacional"
+      ]
+    },
+    {
+      "company": "F1RST Tecnologia",
+      "role": "IT Developer",
+      "period": "dez 2021 - mar 2025",
+      "location": "São Paulo, Brasil",
+      "description": "Atuação no time de URA, com experiência na migração de projetos monolíticos para microsserviços, integração com APIs de terceiros e monitoramento de aplicações.",
+      "bullets": [
+        "Migração de aplicações monolíticas para microsserviços com foco em escalabilidade e manutenção.",
+        "Definição de arquitetura, integração de APIs e acompanhamento de aplicações em produção."
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "REST",
+        "SOAP",
+        "MongoDB",
+        "Jenkins",
+        "Grafana",
+        "Dynatrace",
+        "Scrum",
+        "Git"
+      ]
+    }
+  ]
+}

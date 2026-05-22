@@ -3,34 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio | Heitor Lopes Bianchi</title>
+  <title>Heitor Bianchi | Engenheiro de Software Backend</title>
   <meta
     name="description"
-    content="Portfolio profissional com experiencia, stack, formacao e formas de contato."
+    content="Portfolio profissional de Heitor Lopes Bianchi, engenheiro de software backend especializado em integrações e sistemas escaláveis."
   />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=Style+Script&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=7" />
 </head>
 <body>
   <div class="site-shell">
-    <div class="site-noise" aria-hidden="true"></div>
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
-
     <header class="topbar">
       <div class="wrap topbar-inner">
-        <a class="brand" href="#inicio" aria-label="Ir para o inicio">
-          <span class="brand-mark">HL</span>
-          <span class="brand-copy">
-            <strong id="brand-name">Heitor Lopes Bianchi</strong>
-            <span>Software Engineer</span>
-          </span>
+        <a class="brand" id="brand-link" href="#home" data-route="home" aria-label="Ir para a pagina inicial">
+          <span class="brand-name" id="brand-name">Heitor Bianchi</span>
         </a>
 
         <button
@@ -40,197 +32,176 @@
           aria-expanded="false"
           aria-controls="site-nav"
         >
-          Menu
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only" id="menu-toggle-label">Abrir menu</span>
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Navegacao principal">
-          <a href="#visao">Visao</a>
-          <a href="#expertise">Expertise</a>
-          <a href="#trajetoria">Trajetoria</a>
-          <a href="#credenciais">Credenciais</a>
-          <a href="#contato">Contato</a>
+          <a id="nav-about" href="#sobre" data-route="sobre">Sobre</a>
+          <a id="nav-experiences" href="#experiencias" data-route="experiencias">Experiências</a>
         </nav>
 
         <div class="topbar-actions">
-          <a class="icon-link" id="github-link" href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.19.69-3.86-1.54-3.86-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.74 1.26 3.41.96.11-.76.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.5.11-3.12 0 0 .98-.31 3.2 1.18a11.14 11.14 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.62.23 2.82.11 3.12.75.81 1.2 1.84 1.2 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
-              />
+          <a class="contact-pill" id="nav-contact" href="#contato" data-route="contato">Contatos</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="true">
+            <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4.2a1 1 0 0 1-1-1V1.5a1 1 0 1 1 2 0v1.7a1 1 0 0 1-1 1Zm0 19.3a1 1 0 0 1-1-1v-1.7a1 1 0 1 1 2 0v1.7a1 1 0 0 1-1 1ZM4.22 5.64 3.02 4.43a1 1 0 0 1 1.41-1.41l1.21 1.2a1 1 0 0 1-1.42 1.42Zm15.35 15.34-1.21-1.2a1 1 0 1 1 1.42-1.42l1.2 1.21a1 1 0 0 1-1.41 1.41ZM3.2 13H1.5a1 1 0 1 1 0-2h1.7a1 1 0 1 1 0 2Zm19.3 0h-1.7a1 1 0 1 1 0-2h1.7a1 1 0 1 1 0 2ZM4.43 20.98a1 1 0 0 1-1.41-1.41l1.2-1.21a1 1 0 1 1 1.42 1.42l-1.21 1.2ZM19.07 5.93a1 1 0 0 1-.71-1.71l1.21-1.2a1 1 0 0 1 1.41 1.41l-1.2 1.21a1 1 0 0 1-.71.29ZM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Z"/>
             </svg>
-          </a>
-          <a class="icon-link" id="linkedin-link" href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.5 8.5h4v15h-4v-15zm8 0h3.8v2.1h.05c.53-1.02 1.83-2.1 3.77-2.1 4.03 0 4.77 2.65 4.77 6.1v8.9h-4v-7.9c0-1.41-.03-3.22-1.96-3.22-1.96 0-2.26 1.53-2.26 3.11v7.99h-4v-15z"
-              />
+            <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.7 14.22a1 1 0 0 1 .2 1.05A9.4 9.4 0 1 1 8.73 3.1a1 1 0 0 1 1.25 1.25A7.39 7.39 0 0 0 19.65 14a1 1 0 0 1 1.05.21Z"/>
             </svg>
-          </a>
-          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
-            <span class="theme-toggle-track">
-              <span class="theme-toggle-thumb"></span>
-            </span>
           </button>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="hero section" id="inicio">
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">Backend, integracao e software para operacoes criticas</span>
-            <h1 id="hero-role">Engenheiro de Software</h1>
-            <p class="hero-lead" id="hero-tagline">
-              Arquitetura orientada a servicos, APIs e sistemas preparados para crescer sem perder clareza.
-            </p>
+    <main class="main">
+      <section class="page is-active" id="page-home" data-page="home" aria-labelledby="home-title">
+        <div class="wrap home-grid">
+          <a class="tile hero-tile" href="#sobre" data-route="sobre">
+            <span class="portrait">
+              <img id="profile-photo" src="me.png" alt="Foto de perfil de Heitor Lopes Bianchi" />
+            </span>
+            <span class="tile-body">
+              <span class="greeting" id="home-title">Olá, eu sou Heitor</span>
+              <span class="home-role" id="home-role">Engenheiro de Software Backend</span>
+            </span>
+            <span class="tile-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4l5.29-5.3L8.7 6.7a1 1 0 0 1 0-1.4Z"/></svg>
+            </span>
+          </a>
 
-            <div class="hero-actions">
-              <a class="button button-primary" id="whatsapp-link" href="#">Conversar agora</a>
-              <a class="button button-secondary" id="email-link" href="mailto:">Enviar email</a>
-            </div>
+          <a class="tile action-tile" href="#experiencias" data-route="experiencias">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3h8a2 2 0 0 1 2 2v2h1a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9a2 2 0 0 1 2-2h1V5a2 2 0 0 1 2-2Zm0 4h8V5H8v2Zm-3 5.2V18a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5.8l-5.58 1.7a5 5 0 0 1-2.84 0L5 12.2Zm14-3.1V9H5v1.1l6.16 1.88a3 3 0 0 0 1.68 0L19 10.1Z"/>
+            </svg>
+            <span id="home-experiences-label">Experiências</span>
+          </a>
 
-            <div class="hero-signals">
-              <div class="signal">
-                <span class="signal-label">Base</span>
-                <strong id="hero-location">Sao Paulo, Brasil</strong>
-              </div>
-              <div class="signal">
-                <span class="signal-label">Atuacao</span>
-                <strong id="hero-focus">Java, Kotlin, Spring e integracao</strong>
-              </div>
-              <div class="signal">
-                <span class="signal-label">Contato direto</span>
-                <strong id="hero-phone">+55 11 00000-0000</strong>
-              </div>
-            </div>
+          <a class="tile action-tile" id="home-github" href="https://github.com/heitorel" target="_blank" rel="noreferrer">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.19.69-3.86-1.54-3.86-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.74 1.26 3.41.96.11-.76.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.5.11-3.12 0 0 .98-.31 3.2 1.18a11.14 11.14 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.62.23 2.82.11 3.12.75.81 1.2 1.84 1.2 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/>
+            </svg>
+            <span id="home-github-label">GitHub</span>
+          </a>
+
+          <a class="tile action-tile portfolio-tile" href="#portfolio" data-route="portfolio">
+            <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h12V5H6Zm2 3h8v2H8V8Zm0 4h8v2H8v-2Zm0 4h5v2H8v-2Z"/>
+            </svg>
+            <span id="home-portfolio-label">Portfólio</span>
+          </a>
+
+          <section class="tile stack-tile" aria-labelledby="stack-title">
+            <h2 id="stack-title">Minha stack</h2>
+            <div class="icon-grid" id="home-stack"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="page" id="page-sobre" data-page="sobre" aria-labelledby="about-title">
+        <div class="wrap page-narrow">
+          <h1 class="page-title" id="about-title">Sobre Mim</h1>
+          <div class="about-copy">
+            <p id="about-description"></p>
+            <p id="about-summary"></p>
           </div>
+          <p class="section-note" id="about-stack-note">Stack principal</p>
+          <div class="icon-grid icon-grid-large" id="about-stack"></div>
+        </div>
+      </section>
 
-          <aside class="hero-panel">
-            <div class="identity-card">
-              <div class="identity-topline">
-                <span class="status-dot"></span>
-                <span>Disponivel para projetos, consultoria e novas frentes</span>
-              </div>
+      <section class="page" id="page-experiencias" data-page="experiencias" aria-labelledby="experience-title">
+        <div class="wrap experience-layout">
+          <aside class="profile-column" id="profile-column" aria-label="Dados de contato">
+            <article class="panel profile-card">
+              <h2 id="profile-name">Heitor Lopes Bianchi</h2>
+              <p id="profile-role">Engenheiro de Software Backend</p>
+              <a id="profile-email" href="mailto:heitor.lopes.bianchi@gmail.com">heitor.lopes.bianchi@gmail.com</a>
+              <span id="profile-city">São Paulo, Brasil</span>
+            </article>
 
-              <div class="identity-main">
-                <div class="portrait-frame">
-                  <img src="me.png" alt="Foto de perfil de Heitor Lopes Bianchi" />
-                </div>
-
-                <div class="identity-content">
-                  <p class="identity-kicker">Perfil</p>
-                  <h2 id="card-name">Heitor Lopes Bianchi</h2>
-                  <p id="card-role">Engenheiro de Software</p>
-                </div>
-              </div>
-
-              <div class="identity-notes" id="quick-facts"></div>
-            </div>
+            <article class="panel contact-list" id="contact-links-list" aria-label="Links profissionais">
+              <a id="aside-github" href="https://github.com/heitorel" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.19.69-3.86-1.54-3.86-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.74 1.26 3.41.96.11-.76.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.5.11-3.12 0 0 .98-.31 3.2 1.18a11.14 11.14 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.62.23 2.82.11 3.12.75.81 1.2 1.84 1.2 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+                <span id="aside-github-label">GitHub</span>
+              </a>
+              <a id="aside-linkedin" href="https://www.linkedin.com/in/heitorbianchi" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.05 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM.5 8.35h4.1V23H.5V8.35Zm7.05 0h3.93v2h.06c.55-1.04 1.9-2.14 3.9-2.14 4.17 0 4.94 2.75 4.94 6.32V23h-4.1v-7.5c0-1.79-.03-4.09-2.49-4.09-2.5 0-2.88 1.95-2.88 3.96V23H7.55V8.35Z"/></svg>
+                <span id="aside-linkedin-label">LinkedIn</span>
+              </a>
+              <a id="aside-whatsapp" href="https://wa.me/5511977731896?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site!" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.8 9.8 0 0 0-8.35 14.92L2.47 22l5.2-1.2A9.8 9.8 0 1 0 12.04 2Zm0 1.95a7.85 7.85 0 1 1-3.78 14.73l-.34-.18-3.06.7.72-2.97-.22-.36a7.85 7.85 0 0 1 6.68-11.92Zm-3.3 3.96c-.17 0-.45.06-.69.32-.24.27-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.78 2.85 4.39 3.88 2.17.85 2.62.68 3.09.64.47-.04 1.52-.62 1.73-1.22.21-.6.21-1.12.15-1.23-.07-.1-.24-.17-.5-.3-.26-.13-1.52-.75-1.75-.84-.24-.08-.41-.13-.59.13-.17.26-.67.84-.82 1.01-.15.17-.3.2-.56.07-.26-.13-1.1-.4-2.1-1.29-.78-.69-1.3-1.54-1.45-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.07-.13-.58-1.42-.8-1.94-.2-.5-.42-.43-.58-.44h-.5Z"/></svg>
+                <span id="aside-whatsapp-label">WhatsApp</span>
+              </a>
+              <a id="aside-resume" href="assets/curriculo.pdf" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.8V7h3.2L13 3.8ZM6 4v16h10V9h-5V4H6Zm5 4h2v5.59l1.3-1.3 1.4 1.42-3.7 3.7-3.7-3.7 1.4-1.42 1.3 1.3V8Z"/></svg>
+                <span id="aside-resume-label">Currículo</span>
+              </a>
+            </article>
           </aside>
-        </div>
-      </section>
 
-      <section class="section section-overview" id="visao">
-        <div class="wrap">
-          <div class="section-heading">
-            <span class="eyebrow">Visao geral</span>
-            <h2>Uma presenca mais editorial, direta e orientada a resultado.</h2>
-          </div>
-
-          <div class="overview-grid">
-            <article class="overview-card overview-card-main">
-              <p class="kicker">Sobre</p>
-              <p class="overview-copy" id="about-text"></p>
-            </article>
-
-            <article class="overview-card">
-              <p class="kicker">Forma de atuar</p>
-              <ul class="overview-list" id="working-principles">
-                <li>Arquitetura limpa para reduzir atrito de manutencao.</li>
-                <li>Integracoes robustas para ambientes de alto volume.</li>
-                <li>Foco em entrega pragmatica, testes e operacao estavel.</li>
-              </ul>
-            </article>
-
-            <article class="overview-card overview-card-metrics">
-              <p class="kicker">Leitura rapida</p>
-              <div class="metrics-grid" id="metrics"></div>
-            </article>
+          <div class="experience-main">
+            <h1 class="page-title align-left" id="experience-title">Experiências</h1>
+            <div class="experience-list" id="experience-list"></div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="expertise">
-        <div class="wrap">
-          <div class="section-heading">
-            <span class="eyebrow">Expertise</span>
-            <h2>Stack organizada por frentes reais de entrega.</h2>
+      <section class="page" id="page-contato" data-page="contato" aria-labelledby="contact-title">
+        <div class="wrap contact-layout">
+          <div class="contact-copy">
+            <h1 class="page-title align-left" id="contact-title">Contato</h1>
+            <p id="contact-intro">Quer conversar sobre uma oportunidade, projeto ou consultoria? Envie uma mensagem por aqui ou fale comigo direto pelo email.</p>
+            <a id="direct-email" href="mailto:heitor.lopes.bianchi@gmail.com">heitor.lopes.bianchi@gmail.com</a>
           </div>
-          <div class="skills-grid" id="skills-groups"></div>
+
+          <form class="contact-form panel" id="contact-form">
+            <label>
+              <span id="contact-name-label">Nome</span>
+              <input id="contact-name" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span id="contact-email-label">Email</span>
+              <input id="contact-email-input" name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span id="contact-message-label">Mensagem</span>
+              <textarea id="contact-message" name="message" rows="7" required></textarea>
+            </label>
+            <button class="button-primary" id="contact-submit" type="submit">Enviar</button>
+          </form>
         </div>
       </section>
 
-      <section class="section section-journey" id="trajetoria">
-        <div class="wrap">
-          <div class="section-heading">
-            <span class="eyebrow">Trajetoria</span>
-            <h2>Experiencia em produtos financeiros, pesquisa e transformacao digital.</h2>
-          </div>
-          <div class="timeline-list" id="experience"></div>
-        </div>
-      </section>
-
-      <section class="section section-credentials" id="credenciais">
-        <div class="wrap credentials-grid">
-          <article class="credentials-panel">
-            <div class="section-heading compact">
-              <span class="eyebrow">Formacao</span>
-              <h2>Base academica e certificacao.</h2>
-            </div>
-            <div class="stack-list" id="education"></div>
-          </article>
-
-          <article class="credentials-panel">
-            <div class="section-heading compact">
-              <span class="eyebrow">Idiomas</span>
-              <h2>Comunicacao para contexto local e internacional.</h2>
-            </div>
-            <div class="language-list" id="languages"></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-contact" id="contato">
-        <div class="wrap">
-          <div class="contact-card">
-            <div>
-              <span class="eyebrow">Contato</span>
-              <h2>Se a ideia pede sistema confiavel, integracao limpa e execucao objetiva, faz sentido conversar.</h2>
-            </div>
-
-            <div class="contact-actions">
-              <a class="button button-light" id="whatsapp-link2" href="#">Chamar no WhatsApp</a>
-              <a class="button button-outline-light" id="email-link2" href="mailto:">Enviar email</a>
-            </div>
-
-            <div class="contact-meta">
-              <a id="contact-email" href="mailto:">heitor.lopes.bianchi@gmail.com</a>
-              <span id="contact-phone">+55 11 97773-1896</span>
-            </div>
-          </div>
+      <section class="page" id="page-portfolio" data-page="portfolio" aria-labelledby="portfolio-title">
+        <div class="wrap page-narrow construction">
+          <svg class="construction-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 3h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5v2h3a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2h3v-2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v10h14V5H5Zm7 12v2h0v-2Z"/>
+          </svg>
+          <h1 class="page-title" id="portfolio-title">Portfólio em Construção</h1>
+          <p id="portfolio-description">Esta área vai receber projetos selecionados, estudos de caso e detalhes técnicos. Por enquanto, o melhor caminho é visitar meu GitHub.</p>
+          <a class="button-primary" id="portfolio-github" href="https://github.com/heitorel" target="_blank" rel="noreferrer">Abrir GitHub</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="wrap footer-inner">
-        <p><span id="footer-name">Heitor Lopes Bianchi</span> <span id="footer-year"></span></p>
-        <p>Portfolio desenhado para leitura rapida, navegacao clara e contato direto.</p>
+        <div class="footer-links">
+          <a id="footer-github" href="https://github.com/heitorel" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.19.69-3.86-1.54-3.86-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.74 1.26 3.41.96.11-.76.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.5.11-3.12 0 0 .98-.31 3.2 1.18a11.14 11.14 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.62.23 2.82.11 3.12.75.81 1.2 1.84 1.2 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a id="footer-linkedin" href="https://www.linkedin.com/in/heitorbianchi" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.05 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM.5 8.35h4.1V23H.5V8.35Zm7.05 0h3.93v2h.06c.55-1.04 1.9-2.14 3.9-2.14 4.17 0 4.94 2.75 4.94 6.32V23h-4.1v-7.5c0-1.79-.03-4.09-2.49-4.09-2.5 0-2.88 1.95-2.88 3.96V23H7.55V8.35Z"/></svg>
+          </a>
+        </div>
       </div>
     </footer>
   </div>
 
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>
