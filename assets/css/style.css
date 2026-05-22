@@ -670,25 +670,25 @@ html:not(.dark) .theme-sun {
 
 .construction {
   display: grid;
-  gap: 1.4rem;
-  padding: clamp(1.6rem, 4vw, 2.8rem);
-  border-radius: 2.35rem;
-  background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.08), transparent),
-    linear-gradient(135deg, #124f4b, #0d6a63 55%, #d97745);
-  color: #fffaf1;
-  box-shadow: 0 30px 90px rgba(16, 23, 27, 0.3);
+  justify-items: center;
+  align-content: center;
+  min-height: min(560px, calc(100vh - 220px));
+  text-align: center;
 }
 
-.contact-card .eyebrow {
-  color: rgba(255, 248, 240, 0.8);
+.construction-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  fill: currentColor;
 }
 
 .construction p {
   max-width: 44rem;
   margin: -1rem 0 2rem;
   color: var(--text);
-  font-size: 1.2rem;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
 }
 
 .footer {
