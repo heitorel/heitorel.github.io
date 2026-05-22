@@ -61,6 +61,11 @@
       "email": "Email",
       "message": "Mensagem"
     },
+    "links": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "whatsapp": "WhatsApp"
+    },
     "submit": "Enviar",
     "emailSubject": "Contato pelo portfolio"
   },

@@ -260,6 +260,9 @@ function applyContent(content) {
   setText("contact-name-label", contactPage.fields.name);
   setText("contact-email-label", contactPage.fields.email);
   setText("contact-message-label", contactPage.fields.message);
+  setText("contact-email-link-label", contactPage.links.email);
+  setText("contact-linkedin-link-label", contactPage.links.linkedin);
+  setText("contact-whatsapp-link-label", contactPage.links.whatsapp);
   setText("contact-submit", contactPage.submit);
 
   setText("portfolio-title", portfolioPage.title);
@@ -279,8 +282,9 @@ function applyContent(content) {
   setLink("aside-whatsapp", profile.whatsapp);
   setLink("profile-email", `mailto:${profile.email}`);
   setText("profile-email", profile.email);
-  setLink("direct-email", `mailto:${profile.email}`);
-  setText("direct-email", profile.email);
+  setLink("contact-email-link", `mailto:${profile.email}`);
+  setLink("contact-linkedin-link", profile.linkedin);
+  setLink("contact-whatsapp-link", profile.whatsapp);
 
   renderStack("home-stack", stack.core, stack.tools);
   renderStack("about-stack", stack.core, stack.tools);

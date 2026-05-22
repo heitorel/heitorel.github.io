@@ -628,6 +628,10 @@ html:not(.dark) .theme-sun {
   font-size: clamp(1.12rem, 2vw, 1.45rem);
 }
 
+.contact-options {
+  max-width: 32rem;
+}
+
 .contact-copy a {
   color: var(--accent);
   font-weight: 600;
