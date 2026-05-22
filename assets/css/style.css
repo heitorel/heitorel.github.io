@@ -10,7 +10,7 @@
   --accent: #7657ff;
   --accent-soft: #eeeaff;
   --shadow: 0 18px 40px rgba(17, 18, 22, 0.08);
-  --radius: 8px;
+  --radius: 18px;
 }
 
 html.dark {
