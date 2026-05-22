@@ -404,26 +404,24 @@ html:not(.dark) .theme-sun {
 
 .tool-link {
   position: relative;
-  padding: 0.7rem;
-  border-radius: 1.95rem;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent),
-    linear-gradient(135deg, rgba(15, 118, 110, 0.2), rgba(217, 119, 69, 0.18));
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: var(--text);
+  background: transparent;
+  transition: transform 160ms ease, color 160ms ease, border-color 160ms ease, background-color 160ms ease;
 }
 
-.portrait-frame img {
-  aspect-ratio: 4 / 5;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1.5rem;
-}
-
-.identity-kicker {
-  margin: 0 0 0.35rem;
-  color: var(--text-soft);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
+.tool-icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: currentColor;
+  mask: var(--icon-url) center / contain no-repeat;
+  -webkit-mask: var(--icon-url) center / contain no-repeat;
 }
 
 .tool-link::after {
