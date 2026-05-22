@@ -1,5 +1,5 @@
 const CONTENT_PATH = "assets/data/site-content.json";
-const routes = new Set(["home", "sobre", "experiencias", "contato", "portfolio"]);
+const routes = new Set(["home", "sobre", "experiencias", "contato", "portfolio", "blog"]);
 
 function byId(id) {
   return document.getElementById(id);
@@ -216,7 +216,7 @@ function setupContactForm(profile, contactPage) {
 }
 
 function applyContent(content) {
-  const { metadata, profile, navigation, home, about, experiencesPage, contactPage, portfolioPage, footer, stack, experience } = content;
+  const { metadata, profile, navigation, home, about, experiencesPage, contactPage, portfolioPage, blogPage, footer, stack, experience } = content;
 
   document.title = metadata.title;
   document.querySelector('meta[name="description"]')?.setAttribute("content", metadata.description);
@@ -234,7 +234,7 @@ function applyContent(content) {
   setText("home-title", home.greeting);
   setText("home-role", profile.role);
   setText("home-experiences-label", home.cards.experiences);
-  setText("home-github-label", home.cards.github);
+  setText("home-blog-label", home.cards.blog);
   setText("home-portfolio-label", home.cards.portfolio);
   setText("stack-title", home.stackTitle);
 
@@ -265,11 +265,12 @@ function applyContent(content) {
   setText("portfolio-title", portfolioPage.title);
   setText("portfolio-description", portfolioPage.description);
   setText("portfolio-github", portfolioPage.githubButton);
+  setText("blog-title", blogPage.title);
+  setText("blog-description", blogPage.description);
 
   setAttr("footer-github", "aria-label", footer.githubAria);
   setAttr("footer-linkedin", "aria-label", footer.linkedinAria);
 
-  setLink("home-github", profile.github);
   setLink("portfolio-github", profile.github);
   setLink("footer-github", profile.github);
   setLink("aside-github", profile.github);

@@ -29,7 +29,7 @@
     "greeting": "Olá, eu sou Heitor 👋",
     "cards": {
       "experiences": "Experiências",
-      "github": "GitHub",
+      "blog": "Blog",
       "portfolio": "Portfólio"
     },
     "stackTitle": "Stack que eu gosto",
@@ -68,6 +68,10 @@
     "title": "Portfólio em Construção",
     "description": "Esta área vai receber projetos selecionados, estudos de caso e detalhes técnicos. Por enquanto, o melhor caminho é visitar meu GitHub.",
     "githubButton": "Abrir GitHub"
+  },
+  "blogPage": {
+    "title": "Blog em Construção",
+    "description": "Em breve este espaço terá posts sobre backend, arquitetura, aprendizados de carreira e bastidores de projetos."
   },
   "footer": {
     "githubAria": "GitHub",
