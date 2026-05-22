@@ -423,7 +423,7 @@ html.dark .theme-toggle-thumb {
 .skill-card,
 .timeline-item {
   border: 1px solid var(--line);
-  border-radius: 2.15rem;
+  border-radius: 2.65rem;
   background: var(--surface);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
@@ -463,7 +463,7 @@ html.dark .theme-toggle-thumb {
 .portrait-frame {
   position: relative;
   padding: 0.7rem;
-  border-radius: 1.95rem;
+  border-radius: 2.35rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent),
     linear-gradient(135deg, rgba(15, 118, 110, 0.2), rgba(217, 119, 69, 0.18));
@@ -473,7 +473,7 @@ html.dark .theme-toggle-thumb {
   aspect-ratio: 4 / 5;
   width: 100%;
   object-fit: cover;
-  border-radius: 1.5rem;
+  border-radius: 1.85rem;
 }
 
 .identity-kicker {
@@ -760,7 +760,7 @@ html.dark .theme-toggle-thumb {
 .stack-item,
 .language-item {
   padding: 1rem 1.05rem;
-  border-radius: 1.5rem;
+  border-radius: 1.85rem;
   background: var(--surface-strong);
   border: 1px solid var(--line);
 }
@@ -787,7 +787,7 @@ html.dark .theme-toggle-thumb {
   display: grid;
   gap: 1.4rem;
   padding: clamp(1.6rem, 4vw, 2.8rem);
-  border-radius: 2.35rem;
+  border-radius: 2.85rem;
   background:
     linear-gradient(140deg, rgba(255, 255, 255, 0.08), transparent),
     linear-gradient(135deg, #124f4b, #0d6a63 55%, #d97745);
